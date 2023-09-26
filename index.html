@@ -15,8 +15,8 @@
         <header class="header">
             
             <a href="#" class ="logo">chessiitk</a>
-
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <i class="ri-menu-3-line menu-icon" id="menu-toggle"></i>
+<!--             <div class="bx bx-menu" id="menu-icon"></div> -->
 
             <nav class="navbar">
                 <a href="#home">Home</a>
@@ -27,6 +27,20 @@
                 <a href="#team">Team</a>
 <!--                 <a href="#contact">Contact</a> -->
             </nav>
+            <script inline>
+                // Get references to the menu button and the navbar
+                const menuButton = document.getElementById("menu-toggle");
+                const navbar = document.querySelector(".navbar");
+            
+                // Add a click event listener to the menu button
+                menuButton.addEventListener("click", () => {
+                  // Toggle the "active" class on the navbar
+                  navbar.classList.toggle("active");
+            
+                  // Add a transition effect
+                  navbar.style.transition = "transform 0.3s ease";
+                });
+            </script>
         </header>
 
         <section class="home" id="home">
