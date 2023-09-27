@@ -442,7 +442,17 @@ section{
     font-size:1.87rem;
     margin: 2rem 0 3rem;
 }
-
+@media screen and (max-width:900px){
+    .about-img{
+        position:relative;
+        width:21rem;
+        height:21rem;
+        border-radius:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+}
 /* .events{
     margin:0;
     padding:0;
