@@ -381,8 +381,8 @@ section{
     } */
     .home-sci {
         position: absolute;
-        bottom: -25rem;
-        width: 175px;
+        bottom: -20rem;
+        width: 200px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
